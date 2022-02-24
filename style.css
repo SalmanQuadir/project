@@ -1,0 +1,74 @@
+.nav-item a{
+    color: white !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 0 10px;
+   
+}
+.navitem {
+    float: right !important;
+
+}
+.navbar-brand{
+    color: white !important;
+}
+
+
+#BasicDetail{
+    
+    margin: 20px;
+    /* border: 2px solid rgb(221, 210, 210); */
+    /* box-shadow:  1px 1px 1px 4px ; */
+    border-radius: 10px;
+    padding: 10px;
+    background-color:lightgrey;
+    /* background-image: url("Images/427852.jpg"); */
+}
+#BasicDetail label{
+    color: black;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.col input{
+margin: 1px;
+}
+#BasicDetail .row .col{
+    padding: 10px;
+}
+.btn1{
+    margin-top: 4px;
+text-align: center;
+}
+.heading
+{
+    padding:2px;
+    color: white;
+    font-weight: bolder;
+    text-align: center ;
+    background-color: black;
+    /* border:1px solid white; */
+    border-radius: 32px;
+    /* box-shadow: 1px 1px 1px  white; */
+}
+
+.btn2{
+  float: right;
+}
+.EducationDetail{
+/* border: 2px solid black; */
+border-radius:20px ;
+padding: 20px;
+margin-bottom: 4px;
+}
+.form2 div{
+    margin: 4px;
+}
+.Delete{
+    float:right;
+    height: 30px;
+    height: 30px;
+}
+body{
+    background-image: url("/Images/660523.jpg");
+}
