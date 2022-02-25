@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     });
     $(".addEdu").on('click', '#delete', function () {
-        var cloneitem=clone.length;
+    
 
         $(this).parent().parent().remove();
         // index--;
@@ -68,14 +68,16 @@ $(document).ready(function () {
 
     
         let id = $(this).parent().parent().parent().attr("id");
-        let maxmarks=$('#id').siblings();
-        //let marksobtained=$(id).siblings().children().find(".marksobtained").val();
-        console.log(id,maxmarks);
+        console.log("cloneId::" +id,);
+        let maxmarks=document.getElementById(id);
+        maxmarks.find('.maxmarks').val();
+        console.log(maxmarks);
+        // let marksobtained = $(this).val();
         // let maxmarks = $(this).parent().prev().find('.maxmarks').val();
-    //     console.log(maxmarks);
-    //     let percentage = (marksobtained / maxmarks) * 100;
-    //     console.log(percentage);
-    //     let row = $(this).parent().parent().next().find('.percentage').val(percentage);
+        // let percentage = (marksobtained / maxmarks) * 100;
+        // console.log(percentage);
+        // let row = $(this).parent().parent().next().find('.percentage').val(percentage);
+       
     });
 
 
