@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var index = 0;
     var i = 0;
-    var elem = `<div class="EducationDetail">
+    var elem = `<div class="EducationDetail ">
     <div class="heading">Education Details</div>
     <div class="row">
     <div class="col">
@@ -42,7 +42,7 @@ $(document).ready(function () {
                                                         <br>
                                                         </div>)`
     $("#btn_2").click(function () {
-
+	 
 
         if (i < 4) {
             i++;
