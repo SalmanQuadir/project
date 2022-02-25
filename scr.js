@@ -25,12 +25,12 @@ $(document).ready(function () {
                             <input  type="number" id="maxmarks"  class="form-control maxmarks" placeholder="Max marks" required>
                                 </div>
                                 <div class="col"><label for="">Marks Obtained</label>
-                                <input type="number" class="form-control marksobtained " id="marksobtained`+ [i] + `" placeholder="Marks Obtained..." required></div>
+                                <input type="number" class="form-control marksobtained "  placeholder="Marks Obtained..." required></div>
                                 </div>
                                 <div class="row">
                                     <div class="col pr">
                                         <label for="">Percentage(%)</label>
-                                        <input  type="number" class="form-control percentage" id="percentage`+ [i] + `"  placeholder="Percentage">
+                                        <input  type="number" class="form-control percentage"   placeholder="Percentage">
                                             </div><div class="col">
                                                 <label for="">Year of Passing</label>
                                                 <input type="number" class="form-control" placeholder="Year of Passing" required>
@@ -48,15 +48,17 @@ $(document).ready(function () {
             i++;
          
 
-           let clonee= $(elem).clone();
-           clonee.appendTo(".addEdu");
-
+           clone= $(elem).clone().attr('id', 'id'+ i);
+           clone.appendTo(".addEdu");
+           
            
 
         }
 
     });
     $(".addEdu").on('click', '#delete', function () {
+        var cloneitem=clone.length;
+
         $(this).parent().parent().remove();
         // index--;
         i--;
@@ -64,13 +66,16 @@ $(document).ready(function () {
     });
     $(document).on('keyup', '.marksobtained', function () {
 
-        // console.log($(this).val());
-        let marksobtained = $(this).val();
-        let maxmarks = $(this).parent().prev().find('.maxmarks').val();
-        console.log(maxmarks);
-        let percentage = (marksobtained / maxmarks) * 100;
-        console.log(percentage);
-        let row = $(this).parent().parent().next().find('.percentage').val(percentage);
+    
+        let id = $(this).parent().parent().parent().attr("id");
+        let maxmarks=$('#id').siblings();
+        //let marksobtained=$(id).siblings().children().find(".marksobtained").val();
+        console.log(id,maxmarks);
+        // let maxmarks = $(this).parent().prev().find('.maxmarks').val();
+    //     console.log(maxmarks);
+    //     let percentage = (marksobtained / maxmarks) * 100;
+    //     console.log(percentage);
+    //     let row = $(this).parent().parent().next().find('.percentage').val(percentage);
     });
 
 
