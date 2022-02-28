@@ -24,4 +24,15 @@ background: linear-gradient(90deg, rgba(14,14,1,1) 0%, rgba(246,251,7,1) 92%);
     background: rgb(14,14,1);
 background: linear-gradient(90deg, rgba(14,14,1,1) 0%, rgba(251,7,143,1) 92%);
 }
-
+.card6{
+    background: rgb(14,14,1);
+background: linear-gradient(90deg, rgba(14,14,1,1) 0%, rgba(7,251,244,1) 92%);
+}
+.card7{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.card8{
+    background: rgb(2,10,2);
+background: linear-gradient(90deg, rgba(2,10,2,1) 7%, rgba(75,76,26,1) 43%, rgba(63,96,193,1) 100%);
+}
