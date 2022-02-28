@@ -19,6 +19,9 @@ background: linear-gradient(90deg, rgba(14,14,1,1) 0%, rgba(246,251,7,1) 92%);
 }
 .card{
     margin-bottom: 8px;
+    height: 150px;
+    box-shadow: 1px 1px 3px 3px lightgray;
+    border: none !important;
 }
 .card5{
     background: rgb(14,14,1);
