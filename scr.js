@@ -72,6 +72,7 @@ $(document).ready(function () {
         let maxmarks=document.getElementById(id);
         maxmarks.find('.maxmarks').val();
         console.log(maxmarks);
+        
         // let marksobtained = $(this).val();
         // let maxmarks = $(this).parent().prev().find('.maxmarks').val();
         // let percentage = (marksobtained / maxmarks) * 100;
