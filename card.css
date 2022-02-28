@@ -20,4 +20,8 @@ background: linear-gradient(90deg, rgba(14,14,1,1) 0%, rgba(246,251,7,1) 92%);
 .card{
     margin-bottom: 8px;
 }
+.card5{
+    background: rgb(14,14,1);
+background: linear-gradient(90deg, rgba(14,14,1,1) 0%, rgba(251,7,143,1) 92%);
+}
 
